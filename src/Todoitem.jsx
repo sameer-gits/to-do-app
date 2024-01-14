@@ -28,6 +28,10 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
             onChange={(e) => toggleTodo(id, e.target.checked)}
           />
           <p className={`align-middle font-semibold`}>{title}</p>
+          <img
+            className="w-32 h-32 absolute right-2 z-10"
+            src="./assets/Post1.jpg"
+          />
         </label>
 
         {isDeleting ? (
