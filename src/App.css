@@ -1,0 +1,10 @@
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #082f49;
+  padding: 15px;
+}
