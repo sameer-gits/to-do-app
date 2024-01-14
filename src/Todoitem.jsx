@@ -31,10 +31,7 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
         </label>
 
         {isDeleting ? (
-          <img
-            className="w-32 h-32 absolute right-2 z-10"
-            src="./assets/image.gif"
-          />
+          <img className="w-32 h-32 absolute right-2 z-10" src="/image.gif" />
         ) : (
           <button
             onClick={handleDelete}
