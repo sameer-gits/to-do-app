@@ -31,19 +31,18 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
         </label>
 
         {isDeleting ? (
-          <img className="w-32 h-32 absolute right-2 z-10" src="/image.gif" />
+          <img
+            className="w-32 h-32 absolute right-2 z-10"
+            src="https://sameer-gits.github.io/to-do-app/image.gif"
+          />
         ) : (
-          <div>
-            {" "}
-            <img className="w-32 h-32 absolute right-2 z-10" src="/image.gif" />
-            <button
-              onClick={handleDelete}
-              className="border border-yellow-500 p-2 px-4 h-12 bg-sky-950 hover:bg-yellow-500 text-white font-semibold transition-colors"
-              disabled={isDeleting}
-            >
-              Remove
-            </button>
-          </div>
+          <button
+            onClick={handleDelete}
+            className="border border-yellow-500 p-2 px-4 h-12 bg-sky-950 hover:bg-yellow-500 text-white font-semibold transition-colors"
+            disabled={isDeleting}
+          >
+            Remove
+          </button>
         )}
       </li>
     </>
