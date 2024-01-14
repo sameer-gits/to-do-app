@@ -33,7 +33,7 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
         {isDeleting ? (
           <img
             className="w-32 h-32 absolute right-2 z-10"
-            src="public/burst.gif"
+            src="public/vite.svg"
           />
         ) : (
           <button
