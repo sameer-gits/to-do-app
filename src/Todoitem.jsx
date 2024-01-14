@@ -8,7 +8,7 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
     setTimeout(() => {
       deleteTodo(id);
       setIsDeleting(false);
-    }, 1000); // 1000 milliseconds = 1 second
+    }, 1000); // 1000 millis = 1 second
   };
 
   return (
@@ -33,7 +33,7 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
         {isDeleting ? (
           <img
             className="w-32 h-32 absolute right-2 z-10"
-            src="./assets/Burst.gif"
+            src="./assets/image.gif"
           />
         ) : (
           <button
