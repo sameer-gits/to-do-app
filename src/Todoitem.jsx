@@ -19,7 +19,7 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
         }`}
       >
         <label
-          className={` space-x-2 flex items-center py-6 w-full cursor-pointer text-cyan-50 has-[:checked]:text-cyan-800 has-[:checked]:line-through`}
+          className={`flex items-center py-6 w-full cursor-pointer text-cyan-50 has-[:checked]:text-cyan-800 has-[:checked]:line-through`}
         >
           <input
             className="mr-2 min-h-5 min-w-5"
