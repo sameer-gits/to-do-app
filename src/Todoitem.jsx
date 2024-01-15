@@ -22,12 +22,12 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
           className={` space-x-2 flex items-center py-6 w-full cursor-pointer text-cyan-50 has-[:checked]:text-cyan-800 has-[:checked]:line-through`}
         >
           <input
-            className="mr-2 size-5"
+            className="mr-2 min-h-5 min-w-5"
             type="checkbox"
             checked={completed}
             onChange={(e) => toggleTodo(id, e.target.checked)}
           />
-          <p className={`align-middle font-semibold break-all`}>{title}</p>
+          <p className={`align-middle font-semibold break-all mr-2`}>{title}</p>
         </label>
 
         {isDeleting ? (
