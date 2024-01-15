@@ -27,7 +27,7 @@ export const TodoItem = ({ completed, id, title, toggleTodo, deleteTodo }) => {
             checked={completed}
             onChange={(e) => toggleTodo(id, e.target.checked)}
           />
-          <p className={`align-middle font-semibold`}>{title}</p>
+          <p className={`align-middle font-semibold break-all`}>{title}</p>
         </label>
 
         {isDeleting ? (
